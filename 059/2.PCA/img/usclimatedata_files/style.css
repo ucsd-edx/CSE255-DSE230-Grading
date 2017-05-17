@@ -1,0 +1,230 @@
+/* CSS Document */
+/* -------------------------------------------------- General -------------------------------------------------------- */
+html 
+{
+    -webkit-text-size-adjust: none;
+}
+
+html, body, div, span, applet, object,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: inherit ;
+	vertical-align: baseline;		
+}
+table
+{
+	*border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0; 	
+}
+body
+{	
+	background:#fff;
+	font: 12px Verdana, Helvetica, sans-serif;
+	overflow-x:hidden;
+}
+.wrap {
+		position:relative;
+		margin:0 auto;
+		width:1152px;
+}
+header, footer 
+{
+		width:100%;
+		float:left;		
+		background:#FFF;
+}
+nav
+{
+	width:100%;
+	float:left;		
+	background:#FFF;	
+}
+table { border-spacing: 0; }
+h1,h2,h3 { color:#0C62AA; font-weight:bold; margin-bottom:15px; margin-top:15px; font-size:11px;}
+#info_text h2 { color:#000; font-weight:bold; margin-bottom:15px; margin-top:15px; font-size:11px;}
+a { text-decoration:none; color:#0C62AA; }
+.align_right { text-align:right; }
+.align_left { text-align:left; }
+.margin_top_10 { margin-top:10px; }
+.margin_top_15 { margin-top:15px; }
+.underline {text-decoration:underline;}
+/* -------------------------------------------------- Header -------------------------------------------------------- */
+header {		
+		height:80px;
+		border-bottom:5px solid #a0c241;		
+	}
+header a { text-decoration:none; }	
+#logo
+{
+	margin-top: 15px;
+	margin-left:11px;
+	width:280px;
+	height:40px;
+	background: transparent url("../images/lay-out/us-climate-data.png") no-repeat;			
+	float:left;
+}
+#slogan { 
+	margin-left:48px;
+	padding-top:33px;
+	width:332px;
+}
+#slogan h1 { font-size: 11px; font-weight:bold; font-variant:Verdana, Helvetica, Sans-serif; color:#666; margin-top:0px; }
+#google-ad-horizon-nav
+{ 
+	float:left; 
+	margin-left:192px;
+	margin-top:10px;
+}
+#sociale-media 
+{ 
+	float:right;
+	margin-top:51px;
+	margin-right: 196px;
+	font-size:12px;		
+}
+.sociale-media-text { vertical-align:top; font-size:11px; }	
+#search
+{
+	float:right;
+	background-image: url("../images/lay-out/search-background.png");
+	width: 184px;
+	height:23px;
+	margin-top:7px;
+	margin-right:197px; 	
+}
+#searchfield
+{	
+	position: relative;
+	border:none;
+	margin-left:25px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:4px;
+	outline: none;
+	width:152px;	
+}
+.search_flag { vertical-align:middle; margin-bottom:3px; margin-right:5px; }
+.ui-autocomplete-loading { background: white url('../images/animated/ui-anim_basic_16x16.gif') right center no-repeat; }
+
+/* -------------------------------------------------- Content -------------------------------------------------------- */
+/* Breadcrumbs */
+.breadcrumbs { float:right;font-weight:normal;color:#666;margin-top:7px;}
+.breadcrumbs a { color:#0C62AA;}
+/* Temperature */
+.temperature_red { color:#933 }
+.temperature_blue { color:#0C62AA;}
+.left_column { float:left; width: 461px; margin-top:15px;  }
+.right_column { float:right; width:450px; }
+/* Climate */
+#climate
+{
+	min-height: 600px;
+	width: 955px;
+	float:left;	
+	font-size:11px;	
+	margin-bottom:50px;
+}
+#external { border-top:1px solid #cbc7bd; border-right:1px solid #cbc7bd; border-left:1px solid #cbc7bd; background-color:#F0F0F0;} 
+.h1_title { display:inline;}
+.choose_system { display:inline;float:right;margin-right:22px;}
+h2 { font-size:11px;}
+#climate td, #country_table td, #geo-info td, #geo-time-info  {  padding-top: 4px; padding-bottom:4px; border-bottom:#E9E9E9 1px solid; } /* Climate data table column - Padding */
+#climate th { text-align:center; padding-bottom:10px; font-weight:bold; text-align:right;  } /* Climate data table header - Padding & text-align  */
+#climate_table, #geo-info { margin-top:15px;}
+.climate_table_margin_top {  margin-top:20px; } /* Climate table margin top */
+.climate_table_info { width: 150px; text-align:left; } /* Left column of the climate table with text like Hours of sunshine */
+.climate_table_data_td { width: 48px;} /* Width of the column of the table width climate data */
+/* Climograph */
+#climograph { margin-top:20px; }
+#climograph_climate { margin-top:100px;  }
+/* Totals and averages */
+.totals_left_column { width: 260px; }
+.totals_right_column { width: 175px; }
+.three_column { width: 150px; }
+.five_column { width: 200px; }
+.flag { padding-right: 10px; }
+.middle { vertical-align:middle; }
+#extra_info { margin-top:15px;}
+#extra_info a, .link a { text-decoration:underline;}
+#legend { margin-top:15px;}
+/* Results */
+.city_column {  width: 225px;}
+.country_column { width: 150px; }
+.state_column { width: 200px;}
+.continent_column { width: 150px;}
+#results th { text-align:left;}
+/* Google Maps */
+#map-canvas { width:449px;height:322px; float:right;margin-top:5px; margin-bottom:15px;}
+.map_temp { margin-bottom:15px;}
+/* Geo */
+.home_left_column_geo { width: 130px; }
+.home_right_column_geo { width: 360px; }
+.date_time { margin-top:20px;}
+.altitude { display:inline;}
+#geo-time-info {margin-top:15px;}
+/* Add This */
+#buttons { margin-top:15px;}
+/* Tabs */
+.site_tabs { margin-top:10px;}
+.summary, .geo { font:10px Verdana, Helvetica, sans-serif; font-weight:bold;}
+/* Share */
+.source { font-size:9px; margin-top:15px;  color: #666666; width:430px; text-align:center;}
+.source a { text-decoration:underline; color: #666666;}
+.p_margin p { margin-top: 10px; margin-bottom:10px;}
+.textfield { width:420px; height:60px;color: #666; font: 1em Verdana, Helveticam sans-serif; padding:5px;}
+/* Daily */
+.daily_climate_table { width: 439px; margin-top:10px; }
+.daily_climate_table_td_day {width: 50px;}
+/* History */
+.select_year { margin-right:15px;display:inline-block ; }
+.inline_block {display:inline-block;}
+
+/* -------------------------------------------------- Footer -------------------------------------------------------- */
+footer { 	
+	border-top:1px solid  #CCC; 
+	vertical-align:top; height:80px; 
+	background-color:#fff;		
+	font-size:11px;
+  }
+footer a { color:#000; }
+#footer-left, #footer-right { margin-top:20px;  }
+#footer-left { float:left; margin-left:15px; }
+#footer-right { float:right; margin-right:15px; }
+#footer-right a, #footer-left a { text-decoration:underline; }
+/* -------------------------------------------------- Google Ads -------------------------------------------------------- */
+#google-ad-content_left { margin-top:20px;  }
+ #google_ad_content_block  { margin-left:95px;  margin-top:30px;  margin-bottom:20px;  } 
+/*#google_ad_content_block  {  margin-top:30px;  margin-bottom:20px;  } */
+#google_ad_thee_row  {  margin-top:30px;  margin-bottom:20px;  }
+#google_ad_in_content { margin-top:15px;}
+#google-ad-content_continent { margin-top:25px;} 
+#publicity_right { margin-top:42px; margin-right:5px; float:right; }
+#google_ad_content_right { margin-top: 30px;}
+#google_test { position:absolute; margin-left: 494px; top:417px;}
+@-moz-document url-prefix() { #google_test {margin-top:17px;} } 
+@-moz-document url-prefix() { #google-ad-content_left { top:535px; }  } 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)
+{
+	/* Ipad */
+	#google_test { margin-top:17px;}
+	#searchfield {position: relative; border:none; margin-left:25px; font-size:12px; font-family:Arial, Helvetica, sans-serif; margin-top:1px; outline: none; width:145px; height:17px;}
+}
+@media only screen and (max-device-width: 480px) {
+
+	/* Iphone */
+   #google_test { margin-top:17px;}
+	#searchfield {position: relative; border:none; margin-left:25px; font-size:12px; font-family:Arial, Helvetica, sans-serif; margin-top:1px; outline: none; width:145px; height:17px;}
+
+}

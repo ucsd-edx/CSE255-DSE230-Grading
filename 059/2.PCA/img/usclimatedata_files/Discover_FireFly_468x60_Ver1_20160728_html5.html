@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://s0.2mdn.net/3471476/1471978128953/Discover_FireFly_468x60_Ver1_20160728_html5.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title><meta name="viewport" content="width=device-width,initial-scale=1"><script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head><body class="document-body"><div class="wrapper" id="main-div"><div class="banner"><div class="border border-top"></div><div class="border border-bottom"></div><div class="border border-right"></div><div class="border border-left"></div><div class="stage clicktag" style="visibility: inherit; opacity: 1;"><!-- Start Animation HTML Code here --><div class="jpg-element bg1 float" style="transform: matrix(1, 0, 0, 1, 234, 0);"></div><div class="jpg-element bg2 float" style="transform: matrix(1, 0, 0, 1, 0, -60);"></div><div class="float line line-top1" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, -60);"></div><div class="float line line-top2" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, -60);"></div><div class="png-element we-match-all-your" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, -60);"></div><div class="png-element cash-back" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, -60);"></div><div class="png-element at-the-end-of-your-first-year" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, -60);"></div><div class="float line line-bottom1" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, -60);"></div><div class="float line line-bottom2" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, -60);"></div><div class="png-element cash-back-match" style="transform: matrix(1, 0, 0, 1, 234, -60);"></div><div class="png-element first-year-offer" style="transform: matrix(1, 0, 0, 1, 234, -60);"></div><div class="png-element card" style="transform: matrix3d(0.866025, 0, -0.5, 0, 0, 1, 0, 0, 0.5, 0, 0.866025, 0, 0, 0, 0, 1); transform-style: preserve-3d;"></div><div class="png-element final final-text1" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div><div class="png-element final final-text2" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div><div class="png-element final final-text3" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div><div class="cta-button final" style="transform: matrix(1, 0, 0, 1, 0, 0);"><div class="png-element cta"></div><div class="cta-glare" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div></div><div class="png-element final disclaimer" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div><div class="firefly-container"><div class="fly" style="transform: matrix(-0.77572, -0.04045, 0.04045, -0.77572, 4, 20);"><div class="firefly png-element" style="opacity: 0.546509;"></div><div class="firefly-glow png-element" style="opacity: 0.0930176;"></div></div><div class="fly" style="transform: matrix(-0.69784, -0.25648, 0.25648, -0.69784, 46, 6);"><div class="firefly png-element" style="opacity: 0.514673;"></div><div class="firefly-glow png-element" style="opacity: 0.0293455;"></div></div><div class="fly" style="transform: matrix(0.41512, -0.67492, 0.67492, 0.41512, 54, 42);"><div class="firefly png-element" style="opacity: 0.5;"></div><div class="firefly-glow png-element" style="opacity: 0;"></div></div><div class="fly" style="transform: matrix(-0.61148, 0.00774, -0.00774, -0.61148, 120, 20);"><div class="firefly png-element" style="opacity: 0.5;"></div><div class="firefly-glow png-element" style="opacity: 0;"></div></div><div class="fly" style="transform: matrix(0.56747, 0.03315, -0.03315, 0.56747, 162, 2);"><div class="firefly png-element" style="opacity: 0.633116;"></div><div class="firefly-glow png-element" style="opacity: 0.266232;"></div></div><div class="fly" style="transform: matrix(-0.28217, -0.49928, 0.49928, -0.28217, 184, 50);"><div class="firefly png-element" style="opacity: 0.503638;"></div><div class="firefly-glow png-element" style="opacity: 0.00727585;"></div></div><div class="fly" style="transform: matrix(0.51135, 0.74688, -0.74688, 0.51135, 304, 8);"><div class="firefly png-element" style="opacity: 0.624464;"></div><div class="firefly-glow png-element" style="opacity: 0.248929;"></div></div><div class="fly" style="transform: matrix(0.47054, -0.49737, 0.49737, 0.47054, 330, 40);"><div class="firefly png-element" style="opacity: 0.5;"></div><div class="firefly-glow png-element" style="opacity: 0;"></div></div><div class="fly" style="transform: matrix(0.76335, 0.49636, -0.49636, 0.76335, 438, 6);"><div class="firefly png-element" style="opacity: 0.974611;"></div><div class="firefly-glow png-element" style="opacity: 0.949222;"></div></div><div class="fly" style="transform: matrix(0.02434, -0.62453, 0.62453, 0.02434, 458, 54);"><div class="firefly png-element" style="opacity: 0.822971;"></div><div class="firefly-glow png-element" style="opacity: 0.645941;"></div></div></div><!-- End Animation HTML Code --></div></div></div><link rel="stylesheet" type="text/css" href="./style(1).css" media="screen"><script type="text/javascript" src="./tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script><script type="text/javascript" src="./animation.min.js"></script><script type="text/javascript">var clickTag=""; var clicktags = document.querySelectorAll(".clicktag");	for (var i = 0; i < clicktags.length; i++) { clicktags[i].addEventListener("click", function() { window.open( window.clickTag ); }, false);}</script><!-- EXPAND CODE -->
+
+<!--
+
+     :::
+   ::::::
+  ;::::::::
+ ,;::::::::::       `......                  ::
+ ,,;::::::::::: `.............`           ::::::
+ ,,,,::::::::,,,,.................     :::::::,,
+ ,,,,,,,,,,,,,,,,,,..............,,,,,,,,,,,,,,,
+ ,,,,,,,,,,,,,,,,,,,..........,,,,,,,,,,,,,,,,,,
+ ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+   ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+         ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            ,,,,,,,,,,,,,,,,,,,,,,,,,
+                  `,,,,,,,,,,.`
+
+--------=====   Built by BannerWave. =====---------
+
+--></body></html>
