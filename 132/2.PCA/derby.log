@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon May 15 21:18:20 PDT 2017:
+Booting Derby (version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137)) instance a816c00e-015c-0f7a-6df7-00000ca3b1b8 
+on database directory /Users/rafaliang/edu/CSE255/CSE255-DSE230/Classes/2.PCA/metastore_db in READ ONLY mode with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@18eefe86. 
+Loaded from file:/Users/rafaliang/code/CSE255/spark-2.1.0-bin-hadoop2.7/jars/derby-10.12.1.1.jar.
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_112-b16
+user.dir=/Users/rafaliang/edu/CSE255/CSE255-DSE230/Classes/2.PCA
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.11.6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

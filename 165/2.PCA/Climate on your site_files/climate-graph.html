@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)http://www.usclimatedata.com/climate-graph.php?id=usfl0715&system=american&title=1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="https://js-agent.newrelic.com/nr-1026.min.js"></script><script type="text/javascript" async="" src="http://stats.g.doubleclick.net/dc.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="copyright" content="US Climate Data">
+<meta name="author" content="US Climate Data">
+<meta name="Distribution" content="Global">
+<meta name="verify-v1" content="kszynkAg79LwTJz6HMF7+7skNvD8PCRhsMKVIPi5REk=">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./menu-min.css">
+<link rel="stylesheet" href="./jquery-ui-1.8.22.custom.css">
+<link rel="stylesheet" href="./jquery-ui-1.10.3.custom.css"><link rel="stylesheet" type="text/css" href="./jchartfx.css">
+<script type="text/javascript" src="./jquery-1.10.2.min.js"></script><style type="text/css">
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle,
+:root .adsbygoogle,
+:root .addthis_toolbox
+{ display: none !important; }</style>	
+<script type="text/javascript" src="./jquery-ui-1.10.3-custom-min.js"></script>
+<script async="" type="text/javascript" src="./jquery.ui.autocomplete.html.js"></script>
+<script async="" type="text/javascript" src="./formdefaults.js"></script>
+<script async="" type="text/javascript" src="./search.js"></script>
+<script async="" type="text/javascript" src="./jquery.cookies.js"></script>
+
+<script type="text/javascript" src="./jchartfx.system.js"></script>
+<script type="text/javascript" src="./jchartfx.coreBasic.js"></script>
+<script type="text/javascript" language="javascript">
+jQuery(document).ready(function($)
+{
+	//Reload graph with metric or american value
+	$(".btn").click(function() 
+	{	
+		$('#ChartDiv').html("");
+		var system_graph = this.id;		
+		
+		$.ajax({ 		
+			url: "/php/graph.php", 
+    		type: 'POST',
+			dataType: "json",
+    		data: {	
+				weather_id: 'usfl0715',				
+				type: system_graph,								
+			},
+    		success: function(data) 
+			{						
+				var min_temp_graph = data.min_temp_graph;										
+				var max_temp_graph = data.max_temp_graph;				
+				var the_data = data.new_data;
+				var precipitation_step = data.precipitation_step;							
+				var precipitation_max = data.precipitation_max;				
+				var system_standards = data.system_standards;					
+				var system_name = data.system_name;					
+				var steppy = data.step;							
+				loadChart(min_temp_graph,max_temp_graph,the_data,precipitation_max,precipitation_step,steppy,system_standards,system_name);				
+			}
+		});
+		
+	});		
+	var min_temp_graph = 30;
+	var max_temp_graph = 100;	
+	var the_data = '[{"Month": "Jan", "Low":42, "High":60, "Precipitation": 4.65},{"Month": "Feb", "Low":46, "High":64, "Precipitation": 5.08},{"Month": "Mar", "Low":51, "High":70, "Precipitation": 5.83},{"Month": "Apr", "Low":58, "High":76, "Precipitation": 4.33},{"Month": "May", "Low":66, "High":83, "Precipitation": 4.17},{"Month": "Jun", "Low":73, "High":89, "Precipitation": 6.61},{"Month": "Jul", "Low":74, "High":90, "Precipitation": 7.4},{"Month": "Aug", "Low":74, "High":89, "Precipitation": 6.77},{"Month": "Sep", "Low":70, "High":87, "Precipitation": 5.98},{"Month": "Oct", "Low":60, "High":79, "Precipitation": 5.24},{"Month": "Nov", "Low":51, "High":70, "Precipitation": 4.72},{"Month": "Dec", "Low":44, "High":63, "Precipitation": 4.57}]';		
+	var precipitation_max = 8;
+	var precipitation_step = 1;
+
+	var steppy = 20;	
+	var system_standards = "°F";
+	var system_name = "american";
+    var chart1;
+	
+	loadChart(min_temp_graph,max_temp_graph,the_data,precipitation_max,precipitation_step,steppy,system_standards,system_name);
+    function loadChart(min_temp_graph,max_temp_graph,the_data,precipitation_max,precipitation_step,steppy,system_standards,system_name)
+    {
+            chart1 = new cfx.Chart();
+            chart1.getData().setSeries(3);
+			chart1.setBackground(null);
+			
+			/* Temperature */					
+           	chart1.getAxisY().setMin(min_temp_graph); //Low
+           	chart1.getAxisY().setMax(max_temp_graph); // High
+		   	chart1.getAxisY().setStep(10);
+			if(system_name == "american")
+			{
+				chart1.getAxisY().getLabels().setItem(0,"30°F");chart1.getAxisY().getLabels().setItem(20,"50°F");chart1.getAxisY().getLabels().setItem(40,"70°F");chart1.getAxisY().getLabels().setItem(60,"90°F");			}
+			if(system_name == "metric")
+			{
+				chart1.getAxisY().getLabels().setItem(0,"0°C");chart1.getAxisY().getLabels().setItem(10,"10°C");chart1.getAxisY().getLabels().setItem(20,"20°C");chart1.getAxisY().getLabels().setItem(30,"30°C");chart1.getAxisY().getLabels().setItem(40,"40°C");			}
+			/* Precipitation */			
+			chart1.getAxisY2().setMin(0); 
+            chart1.getAxisY2().setMax(precipitation_max);
+			chart1.getAxisY2().setStep(precipitation_step);	
+			if(system_name == "american")
+			{	
+			  chart1.getAxisY2().getLabels().setItem(0,"0inch");chart1.getAxisY2().getLabels().setItem(1,"1inch");chart1.getAxisY2().getLabels().setItem(2,"2inch");chart1.getAxisY2().getLabels().setItem(3,"3inch");chart1.getAxisY2().getLabels().setItem(4,"4inch");chart1.getAxisY2().getLabels().setItem(5,"5inch");chart1.getAxisY2().getLabels().setItem(6,"6inch");chart1.getAxisY2().getLabels().setItem(7,"7inch");chart1.getAxisY2().getLabels().setItem(8,"8inch");			}	
+			if(system_name == "metric")
+			{	
+			  chart1.getAxisY2().getLabels().setItem(0,"0mm");chart1.getAxisY2().getLabels().setItem(20,"20mm");chart1.getAxisY2().getLabels().setItem(40,"40mm");chart1.getAxisY2().getLabels().setItem(60,"60mm");chart1.getAxisY2().getLabels().setItem(80,"80mm");chart1.getAxisY2().getLabels().setItem(100,"100mm");chart1.getAxisY2().getLabels().setItem(120,"120mm");chart1.getAxisY2().getLabels().setItem(140,"140mm");chart1.getAxisY2().getLabels().setItem(160,"160mm");chart1.getAxisY2().getLabels().setItem(180,"180mm");chart1.getAxisY2().getLabels().setItem(200,"200mm");			}								
+            var series1 = chart1.getSeries().getItem(0);
+            var series2 = chart1.getSeries().getItem(1);
+			var series3 = chart1.getSeries().getItem(2);
+			
+			/* Second Y-Axis - Precipitation */
+			series3.setAxisY(chart1.getAxisY2());
+            series1.setGallery(cfx.Gallery.Lines);
+			series2.setGallery(cfx.Gallery.Lines);
+            series3.setGallery(cfx.Gallery.Bar);
+			chart1.getLegendBox().setDock(cfx.DockArea.Bottom);
+			chart1.getAllSeries().setMarkerShape(cfx.MarkerShape.None);
+			/* Climate Data */			
+
+            var data = JSON.parse(the_data);
+
+            chart1.setDataSource(data);
+            var divHolder = document.getElementById('ChartDiv');
+        	chart1.create(divHolder);
+      }
+}); 
+</script>
+<title></title></head><body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2018376-13']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-2018376-13";
+</script><div style="width:430px;text-align:center;"><h1 style="color:#666666">Climate Pensacola</h1></div>
+<div id="ChartDiv" style="width:430px;height:340px"><div id="chart" class="jchartfx"><div style="position: absolute; visibility: hidden; height: auto; width: auto; font-size: 8pt; font-family: Arial; font-weight: normal;" id="textMeasure">Dec</div><div style="position:absolute;visibility:hidden;height:auto;width:auto" id="textMeasureClass" class="LegendItem">o</div></div><svg width="430" height="340" xmlns:sfx="http://www.softwarefx.com/ns" xmlns:xlink="http://www.w3.org/1999/xlink" id="chart" class="jchartfx"><rect pointer-events="none" class="Border" x="0.5" y="0.5" width="429" height="339"></rect><svg width="428" height="299" id="C0s" x="1" y="1"><rect pointer-events="none" style="stroke:none" class="PlotArea" x="37.5" y="30.5" width="350" height="224"></rect><line pointer-events="none" class="AxisLine AxisX_Line AxisX0_Line" x1="37" y1="254" x2="388" y2="254"></line><text sfxid="Y,0,0" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY0_Text" x="29" y="253.67857142857142" style="text-anchor:end;dominant-baseline:central">30°F</text><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="31" y1="221.5" x2="37" y2="221.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="37" y1="221.5" x2="388" y2="221.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="31" y1="189.5" x2="37" y2="189.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="37" y1="189.5" x2="388" y2="189.5"></line><text sfxid="Y,0,0" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY0_Text" x="29" y="189.9642857142857" style="text-anchor:end;dominant-baseline:central">50°F</text><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="31" y1="157.5" x2="37" y2="157.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="37" y1="157.5" x2="388" y2="157.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="31" y1="126.5" x2="37" y2="126.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="37" y1="126.5" x2="388" y2="126.5"></line><text sfxid="Y,0,0" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY0_Text" x="29" y="126.25000000000001" style="text-anchor:end;dominant-baseline:central">70°F</text><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="31" y1="94.5" x2="37" y2="94.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="37" y1="94.5" x2="388" y2="94.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="31" y1="62.5" x2="37" y2="62.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="37" y1="62.5" x2="388" y2="62.5"></line><text sfxid="Y,0,0" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY0_Text" x="29" y="62.53571428571429" style="text-anchor:end;dominant-baseline:central">90°F</text><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="31" y1="30.5" x2="37" y2="30.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY0_Major" x1="37" y1="30.5" x2="388" y2="30.5"></line><rect sfxid="Y,0,0" sfxtitle="YAxis" style="fill-opacity:0;stroke:none" class="AxisText AxisY_Text AxisY0_Text" x="0.5" y="30.5" width="36" height="224"></rect><text sfxid="Y,0,1" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY1_Text" x="425" y="253.6875" style="text-anchor:end;dominant-baseline:central">0inch</text><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="393" y1="225.5" x2="389" y2="225.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="37" y1="225.5" x2="388" y2="225.5"></line><text sfxid="Y,0,1" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY1_Text" x="425" y="225.8125" style="text-anchor:end;dominant-baseline:central">1inch</text><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="393" y1="197.5" x2="389" y2="197.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="37" y1="197.5" x2="388" y2="197.5"></line><text sfxid="Y,0,1" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY1_Text" x="425" y="197.9375" style="text-anchor:end;dominant-baseline:central">2inch</text><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="393" y1="169.5" x2="389" y2="169.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="37" y1="169.5" x2="388" y2="169.5"></line><text sfxid="Y,0,1" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY1_Text" x="425" y="170.0625" style="text-anchor:end;dominant-baseline:central">3inch</text><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="393" y1="142.5" x2="389" y2="142.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="37" y1="142.5" x2="388" y2="142.5"></line><text sfxid="Y,0,1" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY1_Text" x="425" y="142.1875" style="text-anchor:end;dominant-baseline:central">4inch</text><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="393" y1="114.5" x2="389" y2="114.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="37" y1="114.5" x2="388" y2="114.5"></line><text sfxid="Y,0,1" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY1_Text" x="425" y="114.3125" style="text-anchor:end;dominant-baseline:central">5inch</text><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="393" y1="86.5" x2="389" y2="86.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="37" y1="86.5" x2="388" y2="86.5"></line><text sfxid="Y,0,1" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY1_Text" x="425" y="86.4375" style="text-anchor:end;dominant-baseline:central">6inch</text><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="393" y1="58.5" x2="389" y2="58.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="37" y1="58.5" x2="388" y2="58.5"></line><text sfxid="Y,0,1" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY1_Text" x="425" y="58.5625" style="text-anchor:end;dominant-baseline:central">7inch</text><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="393" y1="30.5" x2="389" y2="30.5"></line><line pointer-events="none" class="AxisMajor AxisY_Major AxisY1_Major" x1="37" y1="30.5" x2="388" y2="30.5"></line><text sfxid="Y,0,1" sfxtitle="YAxis" class="AxisText AxisY_Text AxisY1_Text" x="425" y="30.6875" style="text-anchor:end;dominant-baseline:central">8inch</text><rect sfxid="Y,0,1" sfxtitle="YAxis" style="fill-opacity:0;stroke:none" class="AxisText AxisY_Text AxisY1_Text" x="388.5" y="30.5" width="39" height="224"></rect><g transform=" translate(52.041666666666664,262) rotate(-90)"><text sfxid="X,0" sfxtitle="XAxis" class="AxisText AxisX_Text AxisX0_Text" x="0" y="0" style="text-anchor:end;dominant-baseline:central">Jan</text></g><g transform=" translate(81.125,262) rotate(-90)"><text sfxid="X,0" sfxtitle="XAxis" class="AxisText AxisX_Text AxisX0_Text" x="0" y="0" style="text-anchor:end;dominant-baseline:central">Feb</text></g><g transform=" translate(110.20833333333333,262) rotate(-90)"><text sfxid="X,0" sfxtitle="XAxis" class="AxisText AxisX_Text AxisX0_Text" x="0" y="0" style="text-anchor:end;dominant-baseline:central">Mar</text></g><g transform=" translate(139.29166666666666,262) rotate(-90)"><text sfxid="X,0" sfxtitle="XAxis" class="AxisText AxisX_Text AxisX0_Text" x="0" y="0" style="text-anchor:end;dominant-baseline:central">Apr</text></g><g transform=" translate(168.375,262) rotate(-90)"><text sfxid="X,0" sfxtitle="XAxis" class="AxisText AxisX_Text AxisX0_Text" x="0" y="0" style="text-anchor:end;dominant-baseline:central">May</text></g><g transform=" translate(197.45833333333331,262) rotate(-90)"><text sfxid="X,0" sfxtitle="XAxis" class="AxisText AxisX_Text AxisX0_Text" x="0" y="0" style="text-anchor:end;dominant-baseline:central">Jun</text></g><g transform=" translate(226.54166666666666,262) rotate(-90)"><text sfxid="X,0" sfxtitle="XAxis" class="AxisText AxisX_Text AxisX0_Text" x="0" y="0" style="text-anchor:end;dominant-baseline:central">Jul</text></g><g transform=" translate(255.625,262) rotate(-90)"><text sfxid="X,0" sfxtitle="XAxis" class="AxisText AxisX_Text AxisX0_Text" x="0" y="0" style="text-anchor:end;dominant-baseline:central">Aug</text></g><g transform=" translate(284.7083333333333,262) rotate(-90)"><text sfxid="X,0" sfxtitle="XAxis" class="AxisText AxisX_Text AxisX0_Text" x="0" y="0" style="text-anchor:end;dominant-baseline:central">Sep</text></g><g transform=" translate(313.79166666666663,262) rotate(-90)"><text sfxid="X,0" sfxtitle="XAxis" class="AxisText AxisX_Text AxisX0_Text" x="0" y="0" style="text-anchor:end;dominant-baseline:central">Oct</text></g><g transform=" translate(342.875,262) rotate(-90)"><text sfxid="X,0" sfxtitle="XAxis" class="AxisText AxisX_Text AxisX0_Text" x="0" y="0" style="text-anchor:end;dominant-baseline:central">Nov</text></g><g transform=" translate(371.9583333333333,262) rotate(-90)"><text sfxid="X,0" sfxtitle="XAxis" class="AxisText AxisX_Text AxisX0_Text" x="0" y="0" style="text-anchor:end;dominant-baseline:central">Dec</text></g><rect sfxid="X,0" sfxtitle="XAxis" style="fill-opacity:0;stroke:none" class="AxisText AxisX_Text AxisX0_Text" x="37.5" y="255.5" width="350" height="35"></rect><g><rect sfxid="P,2,0" sfxtitle="Precipitation
+Jan
+5" class="Attribute2" x="41.5" y="123.5" width="21" height="129"></rect><rect sfxid="P,2,1" sfxtitle="Precipitation
+Feb
+5" class="Attribute2" x="70.5" y="111.5" width="21" height="141"></rect><rect sfxid="P,2,2" sfxtitle="Precipitation
+Mar
+6" class="Attribute2" x="99.5" y="90.5" width="21" height="162"></rect><rect sfxid="P,2,3" sfxtitle="Precipitation
+Apr
+4" class="Attribute2" x="128.5" y="132.5" width="21" height="120"></rect><rect sfxid="P,2,4" sfxtitle="Precipitation
+May
+4" class="Attribute2" x="157.5" y="137.5" width="21" height="115"></rect><rect sfxid="P,2,5" sfxtitle="Precipitation
+Jun
+7" class="Attribute2" x="186.5" y="69.5" width="22" height="183"></rect><rect sfxid="P,2,6" sfxtitle="Precipitation
+Jul
+7" class="Attribute2" x="216.5" y="47.5" width="21" height="205"></rect><rect sfxid="P,2,7" sfxtitle="Precipitation
+Aug
+7" class="Attribute2" x="245.5" y="64.5" width="21" height="188"></rect><rect sfxid="P,2,8" sfxtitle="Precipitation
+Sep
+6" class="Attribute2" x="274.5" y="86.5" width="21" height="166"></rect><rect sfxid="P,2,9" sfxtitle="Precipitation
+Oct
+5" class="Attribute2" x="303.5" y="107.5" width="21" height="145"></rect><rect sfxid="P,2,10" sfxtitle="Precipitation
+Nov
+5" class="Attribute2" x="332.5" y="121.5" width="21" height="131"></rect><rect sfxid="P,2,11" sfxtitle="Precipitation
+Dec
+5" class="Attribute2" x="361.5" y="126.5" width="21" height="126"></rect><line sfxid="P,1,0" sfxtitle="High
+Jan - Feb
+60 - 64" class="Attribute1Line" x1="52.041666666666664" y1="157.92857142857144" x2="81.125" y2="145.1857142857143"></line><line sfxid="P,1,1" sfxtitle="High
+Feb - Mar
+64 - 70" class="Attribute1Line" x1="81.125" y1="145.1857142857143" x2="110.20833333333333" y2="126.07142857142858"></line><line sfxid="P,1,2" sfxtitle="High
+Mar - Apr
+70 - 76" class="Attribute1Line" x1="110.20833333333333" y1="126.07142857142858" x2="139.29166666666666" y2="106.95714285714286"></line><line sfxid="P,1,3" sfxtitle="High
+Apr - May
+76 - 83" class="Attribute1Line" x1="139.29166666666666" y1="106.95714285714286" x2="168.375" y2="84.65714285714287"></line><line sfxid="P,1,4" sfxtitle="High
+May - Jun
+83 - 89" class="Attribute1Line" x1="168.375" y1="84.65714285714287" x2="197.45833333333331" y2="65.54285714285714"></line><line sfxid="P,1,5" sfxtitle="High
+Jun - Jul
+89 - 90" class="Attribute1Line" x1="197.45833333333331" y1="65.54285714285714" x2="226.54166666666666" y2="62.35714285714286"></line><line sfxid="P,1,6" sfxtitle="High
+Jul - Aug
+90 - 89" class="Attribute1Line" x1="226.54166666666666" y1="62.35714285714286" x2="255.625" y2="65.54285714285714"></line><line sfxid="P,1,7" sfxtitle="High
+Aug - Sep
+89 - 87" class="Attribute1Line" x1="255.625" y1="65.54285714285714" x2="284.7083333333333" y2="71.91428571428574"></line><line sfxid="P,1,8" sfxtitle="High
+Sep - Oct
+87 - 79" class="Attribute1Line" x1="284.7083333333333" y1="71.91428571428574" x2="313.79166666666663" y2="97.4"></line><line sfxid="P,1,9" sfxtitle="High
+Oct - Nov
+79 - 70" class="Attribute1Line" x1="313.79166666666663" y1="97.4" x2="342.875" y2="126.07142857142858"></line><line sfxid="P,1,10" sfxtitle="High
+Nov - Dec
+70 - 63" class="Attribute1Line" x1="342.875" y1="126.07142857142858" x2="371.9583333333333" y2="148.37142857142857"></line><line sfxid="P,0,0" sfxtitle="Low
+Jan - Feb
+42 - 46" class="Attribute0Line" x1="52.041666666666664" y1="215.27142857142857" x2="81.125" y2="202.52857142857144"></line><line sfxid="P,0,1" sfxtitle="Low
+Feb - Mar
+46 - 51" class="Attribute0Line" x1="81.125" y1="202.52857142857144" x2="110.20833333333333" y2="186.60000000000002"></line><line sfxid="P,0,2" sfxtitle="Low
+Mar - Apr
+51 - 58" class="Attribute0Line" x1="110.20833333333333" y1="186.60000000000002" x2="139.29166666666666" y2="164.3"></line><line sfxid="P,0,3" sfxtitle="Low
+Apr - May
+58 - 66" class="Attribute0Line" x1="139.29166666666666" y1="164.3" x2="168.375" y2="138.81428571428572"></line><line sfxid="P,0,4" sfxtitle="Low
+May - Jun
+66 - 73" class="Attribute0Line" x1="168.375" y1="138.81428571428572" x2="197.45833333333331" y2="116.51428571428573"></line><line sfxid="P,0,5" sfxtitle="Low
+Jun - Jul
+73 - 74" class="Attribute0Line" x1="197.45833333333331" y1="116.51428571428573" x2="226.54166666666666" y2="113.32857142857145"></line><line sfxid="P,0,6" sfxtitle="Low
+Jul - Aug
+74 - 74" class="Attribute0Line" x1="226.54166666666666" y1="113.5" x2="256" y2="113.5"></line><line sfxid="P,0,7" sfxtitle="Low
+Aug - Sep
+74 - 70" class="Attribute0Line" x1="255.625" y1="113.32857142857145" x2="284.7083333333333" y2="126.07142857142858"></line><line sfxid="P,0,8" sfxtitle="Low
+Sep - Oct
+70 - 60" class="Attribute0Line" x1="284.7083333333333" y1="126.07142857142858" x2="313.79166666666663" y2="157.92857142857144"></line><line sfxid="P,0,9" sfxtitle="Low
+Oct - Nov
+60 - 51" class="Attribute0Line" x1="313.79166666666663" y1="157.92857142857144" x2="342.875" y2="186.60000000000002"></line><line sfxid="P,0,10" sfxtitle="Low
+Nov - Dec
+51 - 44" class="Attribute0Line" x1="342.875" y1="186.60000000000002" x2="371.9583333333333" y2="208.9"></line></g></svg><svg width="428" height="39" id="C1s" x="1" y="300"><text pointer-events="none" class="LegendItem" x="64" y="10.4" style="text-anchor:start;dominant-baseline:text-before-edge">Low</text><line sfxid="P,0,-1" class="MarkerHollow Attribute0Line" x1="42" y1="17.5" x2="61" y2="17.5"></line><text pointer-events="none" class="LegendItem" x="162" y="10.4" style="text-anchor:start;dominant-baseline:text-before-edge">High</text><line sfxid="P,1,-1" class="MarkerHollow Attribute1Line" x1="140" y1="17.5" x2="159" y2="17.5"></line><text pointer-events="none" class="LegendItem" x="260" y="10.4" style="text-anchor:start;dominant-baseline:text-before-edge">Precipitation</text><rect sfxid="P,2,-1" class="Attribute2" x="240.5" y="10.5" width="13" height="13"></rect><g class="LegendItem" fill-opacity="0.5" transform="translate(356,9) scale(0.1,0.1)" href="http://www.jchartfx.com/about"><rect fill-opacity="0" width="700" height="200" href="http://www.jchartfx.com/about"></rect><path d="M87.58,66.961H69.698c-0.904,0-1.806,0.723-2.008,1.603l-3.391,14.97c-0.199,0.88,0.377,1.602,1.282,1.602H83.6c0.904,0,1.802-0.722,1.997-1.604l3.277-14.963v-0.002C89.065,67.684,88.485,66.962,87.58,66.961L87.58,66.961z" href="http://www.jchartfx.com/about"></path><path d="M82.395,90.971H64.372c-0.903,0-1.806,0.722-2.006,1.604c0,0-11.206,50.836-11.496,51.692c0,0-3.366,10.019-9.026,9.904c-0.241-0.005-5.609,0.035-5.609,0.035c-0.902-0.015-1.872,0.786-2.063,1.583l-3.693,15.558c-0.209,0.878,0.358,1.603,1.255,1.618c3.209,0.039,10.399,0.119,14.751,0.119c14.138,0,21.591-7.833,26.369-30.376L83.69,92.576C83.881,91.692,83.297,90.971,82.395,90.971L82.395,90.971z" href="http://www.jchartfx.com/about"></path><path d="M177.119,48.024l-38.782-0.252c-30.283,0.693-44.419,23.417-49.642,48.087c-5.303,25.236,1.697,47.37,33.522,47.188l34.788-0.178c0.903-0.008,1.834-0.725,2.064-1.598l3.442-16.063c0.228-0.875-0.323-1.595-1.226-1.6l-35.722-0.123c-14.265,0-17.714-11.162-14.24-27.619c3.473-16.832,10.307-27.98,24.346-29.04c0.373-0.028,37.421-0.261,37.421-0.261c0.903-0.008,1.809-0.725,2.04-1.599l3.221-15.343C178.579,48.75,178.022,48.03,177.119,48.024z" href="http://www.jchartfx.com/about"></path><path d="M218.132,66.49l-18.491,0.033l3.575-17.222c0.204-0.97-0.44-2.006-1.431-2.006h-15.142c-0.991,0-1.97,1.036-2.174,2.006l-19.297,91.938c-0.204,0.971,0.44,2.056,1.431,2.056h15.142c0.991,0,1.97-0.964,2.174-1.935l11.496-54.684l-0.043,0.283c0.19-0.882,1.087-1.665,1.99-1.665h11.524c11.401,0,10.083,8.591,7.748,19.395c-0.023,0.109-7.597,36.559-7.597,36.559c-0.189,0.886-0.041,2.047,1.402,2.047h16.081c0.904,0,1.801-1.03,1.992-1.914l7.631-35.896C240.406,85.538,240.628,67.055,218.132,66.49z" href="http://www.jchartfx.com/about"></path><path d="M319.6,66.295h-32.012c-0.373,0-0.934,0-1.459,0c-31.641,0-39.137,19.573-43.345,38.957c-4.206,19.757-6.107,37.792,26.635,37.792c0,0,3.144-0.091,6.657-0.12c0.898-0.012,1.777-0.723,1.963-1.6l2.797-14.693c0.181-0.887-0.411-1.336-1.315-1.336h-5.213c-11.708,0-13.417-3.379-12.136-12.526c0,0,3.471-17.119,3.479-17.147c0,0,0.046-0.448,0.112-0.694c2.355-6.259,7.15-10.632,16.163-10.632c0.004,0,0.009,0,0.013,0l12.428,0.048c0.992,0,1.627,0.976,1.414,1.944l-12.071,55.037c-0.203,0.97,0.441,1.971,1.433,1.971h18.026c0.991,0,1.968-0.965,2.172-1.935l15.696-73.101C321.237,67.29,320.592,66.295,319.6,66.295z" href="http://www.jchartfx.com/about"></path><path d="M201.394,66.525c-1.442,0-1.546-0.997-1.358-1.882l-0.543,1.882H201.394z" href="http://www.jchartfx.com/about"></path><path d="M414.841,83.465L414.841,83.465l-1.86-7.961c-1.463-5.687-2.842-9.208-9.069-9.208h-3.695c-1.224,0-1.466-0.604-1.397-1.362l3.439-15.479c0.191-0.883-0.109-2.159-1.172-2.159h-18.269c-0.903,0-1.946,0.953-2.146,1.835l-3.586,15.826v-0.055c0,0.88-0.799,1.394-1.703,1.394h-25.066h-1.876h-16.262h-0.51h-1.253c-0.991,0-1.969,0.909-2.172,1.879l-15.695,73.128c-0.203,0.97,0.441,1.992,1.433,1.992h1.006h16.082h0.938c0.991,0,1.968-0.965,2.172-1.935l12.595-54.56l0.001-0.048c0.191-0.88,0.914-1.533,1.817-1.536l22.971,0.079h0.116c1.442,0,1.407,0.385,1.407,1.271v-0.001l-4.336,18.635c-4.139,18.897-3.024,37.189,19.471,37.754c0.221,0.006,9.79,0.029,13.303,0c0.898-0.013,1.782-0.737,1.969-1.614l2.799-14.701c0.18-0.887-0.409-1.343-1.314-1.343h-5.213c-1.173,0-3.332-0.28-3.389-0.282c-11.098-0.137-9.674-8.507-7.359-19.223c0.021-0.097,1.287-6.561,4.296-19.183c0.192-0.877,1.087-1.508,1.988-1.511l18.275-0.017C414.477,85.077,415.047,84.348,414.841,83.465z" href="http://www.jchartfx.com/about"></path><path d="M524.092,92.271l32.338-43.519c0.545-0.723,0.25-1.458-0.653-1.458h-22.121c-0.905,0-2.063,0.901-2.572,1.648L513.736,72.28c-0.45,0.537-0.748,0.485-1.103-0.253l0.004,0.04l-6.503-15.027c-2.721-6.26-4.319-8.744-13.65-8.744h-60.46c-0.902,0-1.86,0.762-2.097,1.881l-19.284,91.159c-0.189,0.886-0.269,1.96,1.173,1.96h16.082c0.903,0,1.8-1.03,1.991-1.914l7.414-35.257l0,0c0.19-0.88,1.169-1.829,2.072-1.829h30.188c0.897,0,1.776-0.717,1.962-1.594l3.165-15.707c0.181-0.887-0.411-1.699-1.315-1.699h-29.896c-1.274,0-1.487-0.79-1.39-1.582l0.63-2.973l2.585-12.84c0.191-0.88,1.082-1.605,1.985-1.605h40.352c1.55,0,2.446,1.181,3.446,2.488v-0.046l7.889,20.363c0.48,1.444,0.205,2.955-0.74,4.161l-36.266,48.646c-0.545,0.723-0.294,1.388,0.609,1.388H484.7c0.905,0,2.063-0.83,2.572-1.577l20.149-26.931c0.584-0.857,1.665-1.011,1.665-0.158v-0.002l10.659,27.316c0.199,0.883,1.018,1.352,1.921,1.352h19.443c0.905,0,1.44-0.526,1.192-1.396l-18.973-44.62C522.85,95.834,523.147,93.479,524.092,92.271z" href="http://www.jchartfx.com/about"></path><path d="M645.931,101.984l6.673-28.848c0.427-1.867,2.343-2.841,4.26-2.841h11.101c1.917,0,3.134,1.054,2.71,2.922l-6.676,29.005c-0.426,1.868-2.341,3.073-4.258,3.073h-11.103C646.725,105.295,645.504,103.85,645.931,101.984z" href="http://www.jchartfx.com/about"></path><path d="M609.792,101.984l10.789-47.383c0.428-1.87,2.341-3.307,4.261-3.307h11.096c1.919,0,3.14,1.514,2.711,3.385l-10.787,47.322c-0.423,1.866-2.343,3.293-4.26,3.293h-11.098C610.586,105.295,609.367,103.85,609.792,101.984z" href="http://www.jchartfx.com/about"></path><path d="M573.656,101.984l2.563-10.783c0.426-1.868,2.343-2.906,4.26-2.906h11.099c1.917,0,3.136,1.103,2.712,2.971l-2.565,10.939c-0.426,1.869-2.34,3.09-4.259,3.09h-11.099C574.45,105.295,573.231,103.854,573.656,101.984z" href="http://www.jchartfx.com/about"></path><path d="M714.519,21.295h-6.915h-4.183h-35.837c-1.916,0-3.834,1.678-4.257,3.541l-2.566,11.155c-0.424,1.867,0.794,3.304,2.71,3.304h32.418l-16.259,73.658c-1.246,6.287-5.426,11.342-13.264,11.342h-94.109c-1.92,0-3.834,1.148-4.262,3.021l-2.563,11.928c-0.426,1.866,0.794,4.051,2.712,4.051h105.541c10.188,0,19.049-7.312,21.16-17.14l22.384-100.889C717.657,23.397,716.437,21.295,714.519,21.295z" href="http://www.jchartfx.com/about"></path></g></svg></svg><div style="position: absolute; height: auto; width: auto; left: 283px; top: 176px;" id="chartToolTipChartDiv" class="jchartfxToolTip jchartfxToolTipHidden">Precipitation<br>Sep<br>6</div></div>
+<div class="source">source: U.S. Climate Data - Climate <a target="_blank" href="http://www.usclimatedata.com/climate/pensacola/florida/united-states/usfl0715" title="Climate Pensacola - Weather averages Pensacola">Pensacola</a> </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1483d504f0","applicationID":"18031501","transactionName":"ZV0GMBZTDUBQAURcV1wXMRYNHQBfWA9RQV0fXxYFFFpNQ1kS","queueTime":0,"applicationTime":4,"atts":"SRoFRl5JHk4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+</body></html>
