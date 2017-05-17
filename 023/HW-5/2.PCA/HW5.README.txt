@@ -1,0 +1,58 @@
+Directions for HW5.
+===================
+
+The goal of this homework is have students perform data analysis on
+unseen real-world data. Find patterns in that data. Identify which
+patterns are statistically significant, and write a report to
+summarize their work.
+
+The reports will be peer-reviewed, giving the students another
+opportunity to see examples of analysis and to critically compare
+other students work.
+
+Students are given a set of analysis notebooks numbered 4-7, we they
+can use as a starting point to their analysis. However, as students
+are analyzing different datasets, they will find different patterns,
+and following those pattern should lead them to different types of
+analysis. Students are expected to change/add to/create new notebooks.
+
+Based on their analysis the students are to write a report, that
+summarizes their findings in clear English. The report should have
+only text and figures, no code.
+
+An example report is given.
+
+The submission should include all of the notebooks and the final
+report. Review will be based on the report, but reviewers might want
+to go back to the notebooks to see the code and/or detailed results.
+
+
+peer-review
+==========
+Peer review will be done by pairwise comparisons. Each student will
+get 5 pairs of submissions each pair will be for the same data.
+Reviewers are expected to read the reports and refer back to the
+notebooks when needed.
+
+The reviewer will then fill in the following review form (the actual
+form will be a google form).
+
+1. Rigor: Which of the reports used the statistical tools more
+rigorously: 1,2, 0 (they have the same rigor)
+2. Significance: Which of the reports has better statistical support
+for their conclusions? 1,2,0
+3. Originality: Which of the reports went further beyond the supplied
+notebooks?  1,2,0
+4. Presentations: Which of the reports presents the analysis in a
+clearer and more convincing way. Consider both writing, figures and
+document layout.  1,2,0
+
+You will be graded based both on the reviews you go and on the reviews
+you gave.
+
+You can use 0, or equal, when you grade, but if you use a  lot of 0's
+your grade as a reviewer will be lower.
+
+The actual formula for assigning a grade for HW5 will be determined
+after all of the reviews are in.
+
